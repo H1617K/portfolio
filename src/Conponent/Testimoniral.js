@@ -10,7 +10,7 @@ const Testimonials = () => {
       avatarUrl: HarshPhoto,
     },
     {
-      name: "Harsh Raval ",
+      name: "Shery Patel ",
       company: "Dutch Solutions",
       quote: "The mobile app developed by OurCompany has transformed the way our customers interact with our business. It's intuitive, fast, and has greatly improved our user experience.",
       avatarUrl: Harsh1,

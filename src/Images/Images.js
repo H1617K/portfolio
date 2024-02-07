@@ -10,8 +10,9 @@ import Silder1 from '../assets/Silder1.jpg'
 import Slider2 from '../assets/Slider2.jpg'
 import Slider3 from '../assets/Slider3.jpg'
 import ServicesBack from '../assets/ServicesBack.JPG'
+import JoinHand from '../assets/JoingHands.png'
 
 export {
     CloudComputingGuide,futureofmobiledevelopment,WebDevelopmentTrends,WebDevelopment,
-    MobileappDevelopment,Cloudservices,HarshPhoto,Harsh1,Silder1,Slider2,Slider3,ServicesBack
+    MobileappDevelopment,Cloudservices,HarshPhoto,Harsh1,Silder1,Slider2,Slider3,ServicesBack,JoinHand
 }
