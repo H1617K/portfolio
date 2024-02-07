@@ -1,0 +1,58 @@
+/* Navbar.css */
+
+/* Navbar container styles */
+.navbar {
+    background-color: #333; /* Dark background color */
+  }
+
+  .navbar-brand {
+    color: #fff; /* White text color for brand */
+    font-size: 1.5rem;
+  }
+  
+  /* Navbar toggler styles */
+  .navbar-toggler {
+    border-color: transparent; /* Set border color to transparent */
+    background-color: transparent; /* Set background color to transparent */
+    transition: all 0.3s ease; /* Add transition for all properties */
+  }
+  
+  .navbar-toggler:hover {
+    border-color: #fff; /* Change border color on hover */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff; /* White color for toggler icon */
+  }
+  
+  /* Navbar links styles */
+  .navbar-nav .nav-link {
+    color: #fff; /* White text color for links */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #17a2b8; /* Change color on hover */
+  }
+  
+  /* Active link styles */
+  .navbar-nav .nav-item.active .nav-link {
+    color: #17a2b8; /* Color for active link */
+  }
+  
+  /* Navbar animation */
+  @keyframes slideInDown {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .navbar-nav {
+    animation: slideInDown 1s ease forwards; 
+  }
+  

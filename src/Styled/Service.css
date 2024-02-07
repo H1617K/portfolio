@@ -1,7 +1,99 @@
-.services{
-    width: 100%;
-    height: 500px;
-    background-image: url('../assets//ServicesBack.JPG');
-    background-repeat: no-repeat;
-    background-size: 1500px 2500px;
-}
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Container animation */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    animation: fadeInUp 0.5s ease forwards; /* Apply fadeInUp animation */
+  }
+  
+  /* Header styles */
+  .header h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #06053f; /* Dark text color */
+  }
+  
+  /* Service styles */
+  .service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff; /* White background */
+    padding: 20px; /* Padding around each service */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    animation: fadeInUp 0.5s ease forwards; /* Apply fadeInUp animation */
+  }
+  
+  .service:hover {
+    transform: translateY(-5px); /* Move service up on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  .service-icon {
+    font-size: 2rem;
+    margin-right: 20px;
+  }
+  
+  .service-info {
+    flex: 1;
+  }
+  
+  @keyframes smoke {
+    0% { opacity: 0; transform: translateY(50px) rotate(10deg); }
+    100% { opacity: 1; transform: translateY(-100px) rotate(-10deg); }
+  }
+  
+  .services {
+    position: relative; /* Make sure the section is positioned */
+    background-image: linear-gradient(to bottom right, #A9A9A9, #45aaf2); /* Gradient background */
+    padding: 40px; /* Add padding around services section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    overflow: hidden; /* Hide overflow to prevent smoke overflowing */
+  }
+  
+  .services::before,
+  .services::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+    animation: smoke 4s linear infinite; /* Apply smoke animation */
+    transform-origin: left top;
+    z-index: 1;
+  }
+  
+  .services::after {
+    left: auto;
+    right: 0;
+    transform-origin: right top;
+  }
+  
+  /* Add more keyframes for more complex smoke effect */
+  @keyframes smoke {
+    0% { opacity: 0; transform: translateY(50px) rotate(10deg); }
+    25% { opacity: 1; transform: translateY(-20px) rotate(-5deg); }
+    50% { opacity: 0.8; transform: translateY(-50px) rotate(10deg); }
+    75% { opacity: 0.6; transform: translateY(-80px) rotate(-5deg); }
+    100% { opacity: 0.4; transform: translateY(-100px) rotate(10deg); }
+  }
