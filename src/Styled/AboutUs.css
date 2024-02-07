@@ -1,0 +1,152 @@
+.aboutcountiner {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    overflow: hidden;
+}
+
+.about-content {
+    height: 500px;
+    animation: slideFromLeft 1s ease forwards; /* Apply animation */
+    opacity: 0; /* Initially hide element */
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%); /* Move element off screen to the left */
+        opacity: 0; /* Make element fully transparent */
+    }
+    to {
+        transform: translateX(0); /* Move element to its original position */
+        opacity: 1; /* Make element fully visible */
+    }
+}
+
+.about-content h2 {
+    margin-left: 250px;
+    margin-top: 100px;
+    font-size: 48px;
+    color: sandybrown;
+    font-weight: 500;
+}
+
+.about-content p {
+    margin-left: 180px;
+    font-family: sans-serif;
+    color: grey;
+}
+
+.ImageHand {
+    margin-top: 10px;
+    animation: slideFromRight 1s ease forwards; /* Apply animation */
+    opacity: 0; /* Initially hide element */
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%); /* Move element off screen to the right */
+        opacity: 0; /* Make element fully transparent */
+    }
+    to {
+        transform: translateX(0); /* Move element to its original position */
+        opacity: 1; /* Make element fully visible */
+    }
+}
+
+.OurProcess {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.heder {
+    font-size: 48px;
+    color: sandybrown;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    animation: slideUp 1s ease forwards;
+}
+
+.Line {
+    width: 13%;
+    margin-left: 44%;
+    animation: slideUp 1s ease forwards;
+}
+
+.P-deriception p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    letter-spacing: .51px;
+    animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.Header-fourphases{
+    color: #696969;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.Phases {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Phases-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .Phase {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: calc(33.33% - 20px); /* Adjust as needed for responsiveness */
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .Phase:hover {
+    transform: translateY(-5px);
+  }
+
+  .Phases-icon i {
+    font-size: 48px;
+    color: #333;
+  }
+
+  /* Responsive CSS */
+  @media screen and (max-width: 768px) {
+    .Phases-list {
+      justify-content: center;
+    }
+
+    .Phase {
+      width: calc(50% - 20px); /* Adjust as needed for responsiveness */
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .Phase {
+      width: calc(100% - 20px); /* Adjust as needed for responsiveness */
+    }
+  }
+  

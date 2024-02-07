@@ -115,8 +115,8 @@ const Services = () => {
             <p>Lets Join Hands To Turn Your Ideas Into Reality for better service.</p>
           </div>
           <div className='ImageHand'></div>
-          <img src={JoinHand} alt='join hands' />
-        </div>
+           <img src={JoinHand} alt='join hands' />
+          </div>
       </div>
       <br />
       <div className="mobile-tech">
