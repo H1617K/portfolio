@@ -1,5 +1,6 @@
 import React from 'react';
 import { Cloudservices, MobileappDevelopment, WebDevelopment } from '../Images/Images';
+import '../Styled/Product.css'
 
 const Product = () => {
   const services = [
@@ -22,13 +23,13 @@ const Product = () => {
 
   return (
     <section className="it-services">
-      <div className="container">
+      <div className="container1">
         <h2>Our IT Services</h2>
-        <div className="services-list">
+        <div className="services-list1">
           {services.map((service, index) => (
-            <div className="service" key={index}>
+            <div className="service1" key={index}>
               <img src={service.imageUrl} alt={service.title} />
-              <div className="service-info">
+              <div className="service-info1">
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
               </div>
