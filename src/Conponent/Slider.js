@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Silder1, Slider2, Slider3 } from "../Images/Images";
+import '../Styled/Slider.css'
 
 
 const Slider = () => {
@@ -26,23 +27,41 @@ const Slider = () => {
     const perSlide = () => {
         const newIndex = (currentIndex === 0) ? services.length - 1 : currentIndex - 1;
         setCurrentindex(newIndex);
+        // Add fade-out class
+        document.querySelector('.slide').classList.add('fade-out');
+        // Remove fade-out class after the animation duration 
+        setTimeout(() => {
+            document.querySelector('.slide').classList.remove('fade-out');
+        }, 500);
     }
 
     const nextSlide = () => {
         const newIndex = (currentIndex === services.length - 1) ? 0 : currentIndex + 1;
-        setCurrentindex(newIndex)
+        setCurrentindex(newIndex);
+        // Add fade-out class
+        document.querySelector('.slide').classList.add('fade-out');
+        // Remove fade-out class after the animation duration 
+        setTimeout(() => {
+            document.querySelector('.slide').classList.remove('fade-out');
+        }, 500);
     }
+
 
     return (
         <div className="slider">
-            <button onClick={perSlide}>Prev</button>
-            <div className="slide">
-                <img src={services[currentIndex].imageUrl} alt={services[currentIndex].title} />
-                <h2>{services[currentIndex].title}</h2>
-                <p>{services[currentIndex].description}</p>
-            </div>
-            <button onClick={nextSlide}>Next</button>
+        <div className="button-container">
+            <button className="prev" onClick={perSlide}>Prev</button>
         </div>
+        <br/>
+        <div className="slide">
+            <img src={services[currentIndex].imageUrl} alt={services[currentIndex].title} />
+            <h2>{services[currentIndex].title}</h2>
+            <p>{services[currentIndex].description}</p>
+        </div>
+        <div className="button-container">
+            <button className="next" onClick={nextSlide}>Next</button>
+        </div>
+    </div>
     )
 }
 

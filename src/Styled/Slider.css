@@ -1,0 +1,42 @@
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+  
+  .slide {
+    position: relative;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 2s ease; /* Add fade transition */
+  }
+  
+  .slide img {
+    width: 100%; /* Ensure images take up full width of container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 2s ease; /* Add transition for button hover */
+  }
+  
+  .button-container button:hover {
+    background-color: #0056b3;
+  }
+  
