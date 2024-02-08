@@ -1,0 +1,91 @@
+/* FAQ Section Styles */
+.faq-section {
+    padding: 40px 0;
+  }
+  
+  .it-faq {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .FAQHeader {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 900 bold;
+  }
+
+  .FAQHeader2{
+    text-align: center;
+    font-weight: 100;
+    color: grey;
+    margin-top: 2%;
+  }
+  
+  /* FAQ List Styles */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* FAQ Item Styles */
+  .faq {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 1s ease;
+    -webkit-box-shadow: 0px 8px 6px 1px #000000; 
+    box-shadow: 0px 8px 6px 1px #000000;
+    margin-top: 2%;
+  }
+  
+  .faq:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Question Styles */
+  .faq h3 {
+    font-size: 18px;
+    margin: 0;
+    padding: 15px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Answer Styles */
+  .faq p {
+    display: none;
+    font-size: 16px;
+    margin: 0;
+    padding: 15px;
+    color: grey;
+  }
+  
+  .faq:hover p {
+    display: block;
+  }
+  
+ 
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 90%;
+    }
+  
+    .faq h3 {
+      font-size: 16px;
+    }
+  
+    .faq p {
+      font-size: 14px;
+    }
+  }
