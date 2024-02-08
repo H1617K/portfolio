@@ -1,8 +1,6 @@
-/* Navbar.css */
-
 /* Navbar container styles */
 .navbar {
-  background-color: #333; /* Dark background color */
+  background-color: #fff; /* White background color */
 }
 
 /* Navbar brand styles */
@@ -25,26 +23,27 @@
 }
 
 .navbar-toggler:hover {
-  border-color: #fff; /* Change border color on hover */
+  border-color: sandybrown; /* Change border color on hover */
 }
 
 .navbar-toggler-icon {
-  background-color: #fff; /* White color for toggler icon */
+  background-color: sandybrown /* Saffron color for toggler icon */
 }
 
 /* Navbar links styles */
 .navbar-light .navbar-nav .nav-link {
-  color: #fff; /* White text color for links */
+  color: grey; /* Saffron text color for links */
   transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:active {
-  color: #fff; /* Change color on hover, focus, and active */
+  color: sandybrown; /* Change color on hover, focus, and active */
   text-decoration: underline; /* Underline on hover, focus, and active */
 }
-.navbar-light .navbar-nav .nav-link:focus{
-  color: #fff; 
+
+.navbar-light .navbar-nav .nav-link:focus {
+  color: sandybrown;
   text-decoration: underline;
 }
 
