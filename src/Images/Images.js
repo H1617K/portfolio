@@ -4,6 +4,7 @@ import WebDevelopmentTrends from '../assets/WebDevelopmentTrends.jpg'
 import WebDevelopment from '../assets/WebDevelopment.jpg'
 import MobileappDevelopment from '../assets/MobileappDevelopment.jpg'
 import Cloudservices from '../assets/Cloudservices.jpg'
+import contentonwebsites from '../assets/contentonwebsites.jpg'
 import HarshPhoto from '../assets/HarshPhoto.JPG'
 import Harsh1 from '../assets/Harsh1.JPG'
 import Silder1 from '../assets/Silder1.jpg'
@@ -24,6 +25,6 @@ import testimonialsimg from '../assets/testimonialsimg.png'
 
 export {
     CloudComputingGuide,futureofmobiledevelopment,WebDevelopmentTrends,WebDevelopment,
-    MobileappDevelopment,Cloudservices,HarshPhoto,Harsh1,Silder1,Slider2,Slider3,ServicesBack,JoinHand,team,Qualitycode,Efficiency,
+    MobileappDevelopment,Cloudservices,contentonwebsites,HarshPhoto,Harsh1,Silder1,Slider2,Slider3,ServicesBack,JoinHand,team,Qualitycode,Efficiency,
     LevelofCommitment,EXCELLENCE,INNOVATION,TRANSPARENCY,COMMITMENT1,ACCOUNTABILITY,testimonialsimg
 }
