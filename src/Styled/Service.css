@@ -22,12 +22,12 @@
 .service {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  animation: fadeInUp 1s ease forwards;
+  animation: fadeInUp 2s ease forwards;
+  margin-top: 2%;
 }
 
 .service:hover {
@@ -47,20 +47,31 @@
 
 /* Animation for tech section */
 .tech-container {
-  display: flex;
+  display: grid; /* Changed to grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Added gap between items */
   justify-content: center;
 }
 
-.web-tech {
-  max-width: 70%; /* Adjusted for responsiveness */
-  margin-top: 40px; /* Added margin for separation */
+.web-tech,
+.mobile-tech {
+  width: 80%; /* Adjusted for responsiveness */
   padding: 20px;
   background-color: #f0f0f0;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  animation: slideInLeft 4s ease forwards;
-  margin-left: 185px;
-  }
+  margin-top: 2%;
+  opacity: 0; /* Initially hide the elements */
+  margin-left: 120px;
+}
+
+.web-tech {
+  animation: slideInLeft 3s forwards; /* Animation for web-tech */
+}
+
+.mobile-tech {
+  animation: slideInRight 3s forwards; /* Animation for mobile-tech */
+}
 
 .web-tech-list {
   list-style: none;
@@ -97,79 +108,55 @@
 }
 
 /* Keyframe animations */
-@keyframes fadeInUp {
+@keyframes slideInLeft {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(-100%); /* Move from left side */
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0); /* Move to original position */
   }
 }
 
-@keyframes slideInLeft {
-  0% {
+@keyframes slideInRight {
+  from {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(100%); /* Move from right side */
   }
-  100% {
+  to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0); /* Move to original position */
   }
 }
 
-.Tamplete{
-  width: 80%;
-  height: 300px;
-  background-color:#fff;
+
+.Tamplete {
+  width: 80%; /* Adjusted for responsiveness */
+  height: 250px;
   display: flex;
-  justify-content: space-evenly;
-  padding: 20px;
-    border-radius: 50px;
-    box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.1);
-    animation: fadeInUp 3s ease forwards;
-    margin-left: 120px;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(1.05); 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 
+  animation: fadeInUp 3s ease forwards;
+  background-color: white;
+  margin-left: 120px;
 }
 
-.JoinHand{
- display: flex;
- flex-direction: row;
- justify-content: space-between;
+.JoinHand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.Hand-join{
+.Hand-join {
   margin-top: 100px;
   color: burlywood;
   font-weight: 500;
   font-size: larger;
 }
 
-.ImageHand{
+.ImageHand {
   margin-left: 20px;
 }
-
-
-
-@keyframes slideInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.mobile-tech {
-  max-width: 70%; /* Adjusted for responsiveness */
-  margin-top: 40px; /* Added margin for separation */
-  padding: 20px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  animation: slideInRight 4s ease forwards; /* Changed animation to slideInRight */
-  margin-left: 185px; /* Changed margin-right instead of margin-left */
-}
-

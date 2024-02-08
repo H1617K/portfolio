@@ -8,7 +8,7 @@
 
 .about-content {
     height: 500px;
-    animation: slideFromLeft 1s ease forwards; /* Apply animation */
+    animation: slideFromLeft 2s ease forwards; /* Apply animation */
     opacity: 0; /* Initially hide element */
 }
 
@@ -35,11 +35,12 @@
     margin-left: 180px;
     font-family: sans-serif;
     color: grey;
+    text-align: center;
 }
 
 .ImageHand {
     margin-top: 10px;
-    animation: slideFromRight 1s ease forwards; /* Apply animation */
+    animation: slideFromRight 2s ease forwards; /* Apply animation */
     opacity: 0; /* Initially hide element */
 }
 
@@ -66,22 +67,22 @@
     font-weight: 500;
     display: flex;
     justify-content: center;
-    animation: slideUp 1s ease forwards;
+    animation: slideUp 3s ease forwards;
 }
 
 .Line {
     width: 13%;
     margin-left: 44%;
-    animation: slideUp 1s ease forwards;
+    animation: slideUp 3s ease forwards;
 }
 
 .P-deriception p {
     display: flex;
     justify-content: center;
-    align-items: center;
     color: grey;
     letter-spacing: .51px;
-    animation: slideUp 1s ease forwards;
+    animation: slideUp 3s ease forwards;
+    text-align: center;
 }
 
 @keyframes slideUp {
@@ -117,7 +118,7 @@
     background-color: #f0f0f0;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     width: calc(33.33% - 20px); /* Adjust as needed for responsiveness */
     max-width: 300px;
@@ -125,12 +126,12 @@
   }
 
   .Phase:hover {
-    transform: translateY(-5px);
+    transform: translateY(-15px);
   }
 
-  .Phases-icon i {
-    font-size: 48px;
-    color: #333;
+  .Phases-icon {
+    font-size: 2rem;
+  margin-right: 20px;
   }
 
   /* Responsive CSS */
@@ -150,3 +151,152 @@
     }
   }
   
+
+  .Businessplans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(1.05); 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 
+    height: 250px;
+  }
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .Paragraph {
+    text-align: center;
+    color: gray;
+    animation: slideInLeft 3s ease forwards;
+  }
+  
+  .ParahraphThings {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    animation: slideInRight 3s ease forwards;
+  }
+  
+  .ParahraphThings div {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .ParahraphThings img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+
+
+.QualityOfCode,
+.Communication,
+.LevelofCommitment {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  width: 300px;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.QualityOfCode:hover,
+.Communication:hover,
+.LevelofCommitment:hover {
+  transform: scale(1.05); /* Scale up the element on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+.QualityOfCode p,
+.Communication p,
+.LevelofCommitment p {
+  margin-left: 2%;
+  font-weight: 600;
+  color: sandybrown;
+}
+
+@media only screen and (max-width: 600px) {
+  .QualityOfCode,
+  .Communication,
+  .LevelofCommitment {
+    width: 100%; /* Make each item take full width */
+    margin-bottom: 20px; /* Add some space between items */
+  }
+}
+
+  .CoreValues {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(1.05); 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 
+    height: 250px;
+  }
+  .Paragraph1 {
+    text-align: center;
+  }
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .CoreValues {
+      flex-direction: row;
+      justify-content: center;
+    }
+    .Paragraph1 {
+      text-align: center;
+      color: grey;
+      font-weight: 400;
+    }
+  }
+  /* Additional Styles */
+  .ParahraphThings1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 100px;
+    color: gray;
+    font-size: medium;
+    height: 150px;
+  }
+  .ParahraphThings1 > div {
+    animation: fadeInUp 3s ease forwards;
+    transition: transform 3s ease;
+    height: 140px;
+    width: 10%;
+  }
+  .ParahraphThings1 > div:hover {
+    transform: scale(1.05); /* Scale up the element on hover */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add box shadow on hover */
+  }
+  .ParahraphThings1 img {
+    width: 80px; /* Adjust as needed */
+    height: auto;
+    margin-top: 10%;
+  }
