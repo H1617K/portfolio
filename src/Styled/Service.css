@@ -1,7 +1,7 @@
 /* General styles */
 .services {
   position: relative;
-  background-image: linear-gradient(to bottom right, #A9A9A9, #45aaf2);
+  background-image: linear-gradient(to bottom right, #A9A9A9);
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
