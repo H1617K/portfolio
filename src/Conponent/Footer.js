@@ -33,11 +33,11 @@ export const Footer = () => {
             </div>
             <br />
             <ul className='foot-list-2'>
-              <li><Link to="Service" className='link-item'>Services</Link></li>
-              <li><Link to="AboutUS" className='link-item'>About Us</Link></li>
-              <li><Link to="Blog" className='link-item'>Blog</Link></li>
-              <li><Link to="Testimonials" className='link-item'>Client Testimonials</Link></li>
-              <li><Link to="Product" className='link-item'>Product</Link></li>
+              <li><Link to="/Service" className='link-item'>Services</Link></li>
+              <li><Link to="/AboutUS" className='link-item'>About Us</Link></li>
+              <li><Link to="/Blog" className='link-item'>Blog</Link></li>
+              <li><Link to="/Testimonials" className='link-item'>Client Testimonials</Link></li>
+              <li><Link to="/Product" className='link-item'>Product</Link></li>
             </ul>
           </div>
           <div className='footerLink-Box-3'>

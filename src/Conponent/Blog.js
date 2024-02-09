@@ -30,7 +30,7 @@ const Blog = () => {
       title: "How to make content on websites more effective",
       excerpt: "In the blogosphere nowadays Content Marketing is a popular topic. When it comes to Inbound Marketing, Content is still a hugely effective tool.",
       imageUrl: contentonwebsites,
-      link: "/blog/content-on-websites"
+      link: "https://forcewebtech.com/blog/how-to-make-content-on-websites-more-effective/"
     },
   ];
 
