@@ -1,0 +1,53 @@
+
+.Footerlink-container-1{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    background-color: black;
+}
+
+
+.footerLink-Box-1{
+    margin-left: 10px;
+}
+
+.Footer-Header{
+    color: white;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.foot-list-1, .foot-list-3 li {
+   text-align: center;
+   color: white;
+}
+.foot-list-2{
+    color: white;
+}
+.link-item{
+    color: white;
+    font-size: medium;
+}
+
+.media-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+.media-list li{
+    list-style: none;
+}
+
+.media-list .link-Socail{
+    color: whitesmoke;
+}
+
+/* Copyright section */
+.Footerlink-container-2 {
+    text-align: center;
+    padding: 20px 0;
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+}

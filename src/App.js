@@ -8,6 +8,7 @@ import Blog from './Conponent/Blog';
 import Testimonials from './Conponent/Testimoniral';
 import FAQ from './Conponent/FAQ';
 import AboutUs from './Conponent/AboutUs';
+import { Footer } from './Conponent/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/FAQ" element={<FAQ/>} />
         <Route path='/AboutUs' element={<AboutUs/>}/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
     </>
   );
