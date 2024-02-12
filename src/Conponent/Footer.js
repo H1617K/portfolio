@@ -38,6 +38,7 @@ export const Footer = () => {
               <li><Link to="/Blog" className='link-item'>Blog</Link></li>
               <li><Link to="/Testimonials" className='link-item'>Client Testimonials</Link></li>
               <li><Link to="/Product" className='link-item'>Product</Link></li>
+              <li><Link to="/ContactUs" className='link-item'>Contact Us</Link></li>
             </ul>
           </div>
           <div className='footerLink-Box-3'>
