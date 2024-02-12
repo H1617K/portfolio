@@ -2,6 +2,7 @@ import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.css';
 import '../Styled/Service.css'; 
 import { JoinHand } from '../Images/Images';
+import ContactUs from './ContactUs';
 
 const Services = () => {
   
@@ -160,6 +161,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <ContactUs/>
       </div>
     </section>
   );

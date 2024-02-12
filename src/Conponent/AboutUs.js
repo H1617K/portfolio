@@ -2,6 +2,7 @@ import React from 'react';
 import '../Styled/AboutUs.css';
 import '@fortawesome/fontawesome-free/css/all.css';
 import { ACCOUNTABILITY, COMMITMENT1, EXCELLENCE, Efficiency, INNOVATION, LevelofCommitment, Qualitycode, TRANSPARENCY, team } from '../Images/Images';
+import ContactUs from './ContactUs';
 
 const AboutUs = () => {
 
@@ -138,6 +139,7 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
+            <ContactUs/>
       </div>
     </section>
   );
