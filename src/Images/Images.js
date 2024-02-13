@@ -22,9 +22,10 @@ import TRANSPARENCY from '../assets/TRANSPARENCY & INTEGRITY.jpg'
 import COMMITMENT1 from '../assets/COMMITMENT1.jpg'
 import ACCOUNTABILITY from '../assets/ACCOUNTABILITY.png'
 import testimonialsimg from '../assets/testimonialsimg.png'
+import countactus from '../assets/contectus.png'
 
 export {
     CloudComputingGuide,futureofmobiledevelopment,WebDevelopmentTrends,WebDevelopment,
     MobileappDevelopment,Cloudservices,contentonwebsites,HarshPhoto,Harsh1,Silder1,Slider2,Slider3,ServicesBack,JoinHand,team,Qualitycode,Efficiency,
-    LevelofCommitment,EXCELLENCE,INNOVATION,TRANSPARENCY,COMMITMENT1,ACCOUNTABILITY,testimonialsimg
+    LevelofCommitment,EXCELLENCE,INNOVATION,TRANSPARENCY,COMMITMENT1,ACCOUNTABILITY,testimonialsimg,countactus
 }
