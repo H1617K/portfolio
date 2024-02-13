@@ -1,2 +1,33 @@
-export const API_ENDPOINT = 'http://localhost:3000';
-export const IMAGE_PATH = '/Images/Images.js';
+// export const API_ENDPOINT = 'http://localhost:3000/api/';
+// export const IMAGE_PATH = '/Images/Images.js';
+
+// export const ADD_POST = 'ADD_POST';
+// export const REMOVE_POST = 'REMOVE_POST';
+// export const FETCH_POSTS_REQUEST = 'FETCH_POSTS_REQUEST';
+// export const FETCH_POSTS_SUCCESS = 'FETCH_POSTS_SUCCESS';
+// export const FETCH_POSTS_FAILURE = 'FETCH_POSTS_FAILURE';
+
+// export const ADD_SERVICE = 'ADD_SERVICE';
+// export const REMOVE_SERVICE = 'REMOVE_SERVICE';
+// export const FETCH_SERVICES_REQUEST = 'FETCH_SERVICES_REQUEST';
+// export const FETCH_SERVICES_SUCCESS = 'FETCH_SERVICES_SUCCESS';
+// export const FETCH_SERVICES_FAILURE = 'FETCH_SERVICES_FAILURE';
+
+// export const ADD_FAQ = 'ADD_FAQ';
+// export const REMOVE_FAQ = 'REMOVE_FAQ';
+// export const FETCH_FAQS_REQUEST = 'FETCH_FAQS_REQUEST';
+// export const FETCH_FAQS_SUCCESS = 'FETCH_FAQS_SUCCESS';
+// export const FETCH_FAQS_FAILURE = 'FETCH_FAQS_FAILURE';
+
+// export const ADD_PRODUCT = 'ADD_PRODUCT';
+// export const REMOVE_PRODUCT = 'REMOVE_PRODUCT';
+// export const FETCH_PRODUCTS_REQUEST = 'FETCH_PRODUCTS_REQUEST';
+// export  const FETCH_PRODUCTS_SUCCESS = 'FETCH_PRODUCTS_SUCCESS';
+// export  const FETCH_PRODUCTS_FAILURE = 'FETCH_PRODUCTS_FAILURE';
+
+
+// export const ADD_TESTIMONIAL = 'ADD_TESTIMONIAL';
+// export const REMOVE_TESTIMONIAL = 'REMOVE_TESTIMONIAL';
+// export const FETCH_TESTIMONIALS_REQUEST = 'FETCH_TESTIMONIALS_REQUEST';
+// export const FETCH_TESTIMONIALS_SUCCESS = 'FETCH_TESTIMONIALS_SUCCESS';
+// export const FETCH_TESTIMONIALS_FAILURE = 'FETCH_TESTIMONIALS_FAILURE';
