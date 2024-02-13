@@ -27,6 +27,15 @@ export const toggleFaq = (index) => ({
   payload: index
 });
 
+// Services
+export const TOGGLE_SERVICE = 'TOGGLE_SERVICE';
+
+export const toggleService = (index) => ({
+  type: TOGGLE_SERVICE,
+  payload: index
+});
+
+
 
 // // Import action types
 // import {

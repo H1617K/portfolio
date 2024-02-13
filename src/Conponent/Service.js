@@ -1,28 +1,17 @@
+// Services.js
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleService } from '../redux/actions';
 import '@fortawesome/fontawesome-free/css/all.css';
 import '../Styled/Service.css'; 
-import { JoinHand } from '../Images/Images';
+
 import ContactUs from './ContactUs';
+import { JoinHand } from '../Images/Images';
 
 const Services = () => {
-  
-  const services = [
-    {
-      title: "Web Development",
-      description: "Create responsive and user-friendly websites tailored to your business needs.",
-      icon: "fas fa-laptop-code" 
-    },
-    {
-      title: "Mobile App Development",
-      description: "Build native or cross-platform mobile applications for iOS and Android.",
-      icon: "fas fa-mobile-alt" 
-    },
-    {
-      title: "Cloud Services",
-      description: "Leverage cloud computing solutions to scale your IT infrastructure and improve efficiency.",
-      icon: "fas fa-cloud"
-    },
-  ];
+  const services = useSelector(state => state.service.services);
+  const dispatch = useDispatch();
+
 
   const WebTech = [
     {
@@ -67,6 +56,10 @@ const Services = () => {
       icon: "fa-brands fa-salesforce"
     }
   ]
+
+  const toggleServiceHandler = (index) => {
+    dispatch(toggleService(index));
+  };
 
   return (
     <section>
@@ -161,7 +154,8 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <ContactUs/>
+        {/* Render your other components here */}
+        <ContactUs />
       </div>
     </section>
   );

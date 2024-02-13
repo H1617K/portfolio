@@ -1,11 +1,12 @@
-// reducers/index.js
 import { combineReducers } from 'redux';
 import blogReducer from './blogReducer'; 
 import faqReducer from './faqReducer';
+import servicesReducer from './servicesReducer';
 
 const rootReducer = combineReducers({
   blog: blogReducer,
-  faq: faqReducer
+  faq: faqReducer,
+  service: servicesReducer
 });
 
 
