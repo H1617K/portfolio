@@ -43,6 +43,15 @@ export const fetchProductData = () => ({
 });
 
 
+// Testimonial
+export const FETCH_TESTIMONIALS_DATA = 'FETCH_TESTIMONIALS_DATA';
+
+export const fetchTestimonialsData = () => ({
+  type: FETCH_TESTIMONIALS_DATA
+});
+
+
+
 
 
 // // Import action types
