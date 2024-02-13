@@ -12,6 +12,10 @@ const ContactUs = () => {
     emailjs.sendForm('service_ycqxuxx', 'template_jdw4x5f', e.target, 'XOm3CVsTvGOOIoHsY')
       .then((result) => {
           console.log(result.text);
+          // Reset the form fields after successful submission
+          setName('');
+          setEmail('');
+          setMessage('');
       }, (error) => {
           console.log(error.text);
       });
