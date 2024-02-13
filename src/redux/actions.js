@@ -35,6 +35,14 @@ export const toggleService = (index) => ({
   payload: index
 });
 
+// Product
+export const FETCH_PRODUCT_DATA = 'FETCH_PRODUCT_DATA';
+
+export const fetchProductData = () => ({
+  type: FETCH_PRODUCT_DATA
+});
+
+
 
 
 // // Import action types

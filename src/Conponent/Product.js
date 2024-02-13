@@ -1,37 +1,28 @@
-import React from 'react';
-import { Cloudservices, MobileappDevelopment, WebDevelopment } from '../Images/Images';
-import '../Styled/Product.css'
+// Product.js
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchProductData } from '../redux/actions';
+import '../Styled/Product.css';
 
 const Product = () => {
-  const services = [
-    {
-        title: "Web Development",
-        description: "Create responsive and user-friendly websites tailored to your business needs.",
-        imageUrl: WebDevelopment,
-      },
-      {
-        title: "Mobile App Development",
-        description: "Build native or cross-platform mobile applications for iOS and Android.",
-        imageUrl: MobileappDevelopment,
-      },
-      {
-        title: "Cloud Services",
-        description: "Leverage cloud computing solutions to scale your IT infrastructure and improve efficiency.",
-        imageUrl: Cloudservices,
-      }
-  ];
+  const products = useSelector(state => state.product.products);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchProductData());
+  }, [dispatch]);
 
   return (
     <section className="it-services">
       <div className="container1">
         <h2>Our IT Services</h2>
         <div className="services-list1">
-          {services.map((service, index) => (
+          {products.map((product, index) => (
             <div className="service1" key={index}>
-              <img src={service.imageUrl} alt={service.title} />
+              <img src={product.imageUrl} alt={product.title} />
               <div className="service-info1">
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
+                <h3>{product.title}</h3>
+                <p>{product.description}</p>
               </div>
             </div>
           ))}
