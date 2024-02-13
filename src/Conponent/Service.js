@@ -1,7 +1,7 @@
 // Services.js
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { toggleService } from '../redux/actions';
+import { useSelector} from 'react-redux';
+// import { toggleService } from '../redux/actions';
 import '@fortawesome/fontawesome-free/css/all.css';
 import '../Styled/Service.css'; 
 
@@ -10,7 +10,7 @@ import { JoinHand } from '../Images/Images';
 
 const Services = () => {
   const services = useSelector(state => state.service.services);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
 
   const WebTech = [
@@ -57,9 +57,9 @@ const Services = () => {
     }
   ]
 
-  const toggleServiceHandler = (index) => {
-    dispatch(toggleService(index));
-  };
+  // const toggleServiceHandler = (index) => {
+  //   dispatch(toggleService(index));
+  // };
 
   return (
     <section>
