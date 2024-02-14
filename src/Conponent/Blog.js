@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Slider from 'react-slick';
-import { fetchPostsRequest } from '../redux/actions';
+import { fetchPostsFailure, fetchPostsRequest, fetchPostsSuccess } from '../redux/actions';
 import '../Styled/Blog.css'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
   const dispatch = useDispatch();
@@ -12,7 +13,7 @@ const Blog = () => {
   // const loading = useSelector(state => state.blog.loading);
 
   useEffect(() => {
-    dispatch(fetchPostsRequest());
+    dispatch(fetchPostsRequest, fetchPostsSuccess, fetchPostsFailure());
   }, [dispatch]);
 
   const settings = {
@@ -46,7 +47,7 @@ const Blog = () => {
               <div className="post-info">
                 <h3>{post.title}</h3>
                 <p>{post.excerpt}</p>
-                <a href={post.link}>Read More</a>
+                <Link to={post.link}>Read More</Link>
               </div>
             </div>
           ))}
