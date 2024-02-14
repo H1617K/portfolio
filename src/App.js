@@ -10,6 +10,7 @@ import FAQ from './Conponent/FAQ';
 import AboutUs from './Conponent/AboutUs';
 import { Footer } from './Conponent/Footer';
 import ContactUs from './Conponent/ContactUs';
+import { BlogContain } from './Page/BlogContain';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/FAQ" element={<FAQ/>} />
         <Route path='/AboutUs' element={<AboutUs/>}/>
         <Route path='/ContactUs' element={<ContactUs/>}/>
+        <Route path='/blog/top-trends-in-web-development' element={<BlogContain/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
