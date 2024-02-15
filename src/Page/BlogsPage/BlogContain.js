@@ -7,7 +7,7 @@ export const BlogContain = () => {
       <div className='From-blog'>
         <div className='blog1'>
           <div className='Header'>
-            Categories : <h5>Top-trends-in-web-development</h5>
+          <h5>Top-trends-in-web-development</h5>
           </div>
           <br/>
           <div className='hearder'>
