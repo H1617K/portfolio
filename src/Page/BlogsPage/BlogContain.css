@@ -1,0 +1,32 @@
+.From-blog {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog1 {
+    margin-bottom: 20px;
+    margin-top: 2%;
+  }
+  
+  .hearder{
+    font-size: larger;
+    color: grey;
+    font-weight: bolder;
+  }
+
+  p{
+    text-align: center !important;
+    margin-top: 1%;
+  }
+  h5{
+    margin-left: 10px;
+    border: 1px solid black;
+  }
+
+  .Header{
+    display: flex;
+  }

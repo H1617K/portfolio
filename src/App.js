@@ -10,7 +10,7 @@ import FAQ from './Conponent/FAQ';
 import AboutUs from './Conponent/AboutUs';
 import { Footer } from './Conponent/Footer';
 import ContactUs from './Conponent/ContactUs';
-import { BlogContain } from './Page/BlogContain';
+import { BlogContain } from './Page/BlogsPage/BlogContain';
 
 function App() {
   return (
