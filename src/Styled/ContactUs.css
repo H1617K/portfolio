@@ -75,3 +75,8 @@ input[type="submit"] {
     width: 100%;
   }
 }
+
+.GoogleMap{
+  display: flex;
+  justify-content: center;
+}
