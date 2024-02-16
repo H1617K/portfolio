@@ -9,7 +9,7 @@
 }
 
 .contact-bg {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: -9px;
   width: 100%;
@@ -18,7 +18,7 @@
   background-size: cover;
   background-position: center;
   opacity: 0.1;
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 .contact-title {
