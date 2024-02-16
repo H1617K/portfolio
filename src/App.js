@@ -11,6 +11,7 @@ import AboutUs from './Conponent/AboutUs';
 import { Footer } from './Conponent/Footer';
 import ContactUs from './Conponent/ContactUs';
 import { BlogContain } from './Page/BlogsPage/BlogContain';
+import Simplechatbot from './Conponent/Chatbot';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path='/ContactUs' element={<ContactUs/>}/>
         <Route path='/blog/top-trends-in-web-development' element={<BlogContain/>}/>
       </Routes>
+      <Simplechatbot/>
       <Footer/>
     </BrowserRouter>
     </>
